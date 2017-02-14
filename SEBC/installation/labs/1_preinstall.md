@@ -56,4 +56,9 @@ List your network interface configuration
 List forward and reverse host lookups using getent or nslookup
 
 Show the nscd service is running
+
+service nscd start
+
 Show the ntpd service is running
+
+yum install ntp
