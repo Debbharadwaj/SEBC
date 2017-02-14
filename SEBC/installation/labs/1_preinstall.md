@@ -1,6 +1,7 @@
  vim /etc/sysctl.conf
 [root@Deb-1 ~]# sysctl -a | grep -i swap
 vm.swappiness = 1
+
 Mounts:
 [root@Deb-1 ~]#  cat /proc/mounts
 rootfs / rootfs rw 0 0
