@@ -37,5 +37,23 @@ tmpfs /run/user/0 tmpfs rw,seclabel,nosuid,nodev,relatime,size=2881188k,mode=700
 binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,relatime 0 0
 [root@Deb-1 ~]#
 
-
 Show space for non-reserve: [root@Deb-1 ~]# df / |grep dev | cut -f 3,6 -d\ | awk '{print ($1*.05)+$2}'
+
+Disable transparent hugepages
+
+[root@Deb-1 ~]# /proc/vmstat/ echo never > /sys/kernel/mm/transparent_hugepage/enabled
+[root@Deb-1 ~]# cat /sys/kernel/mm/transparent_hugepage/enabled
+always madvise [never]
+[root@Deb-1 ~]# cat /sys/kernel/mm/transparent_hugepage/defrag
+[always] madvise never
+[root@Deb-1 ~]# echo never > /sys/kernel/mm/transparent_hugepage/defrag
+[root@Deb-1 ~]# cat /sys/kernel/mm/transparent_hugepage/defrag
+
+List your network interface configuration
+
+[root@Deb-1 ~]# ip link show
+
+List forward and reverse host lookups using getent or nslookup
+
+Show the nscd service is running
+Show the ntpd service is running
