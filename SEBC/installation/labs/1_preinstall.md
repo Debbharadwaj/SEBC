@@ -36,3 +36,6 @@ tmpfs /run/user/1000 tmpfs rw,seclabel,nosuid,nodev,relatime,size=2881188k,mode=
 tmpfs /run/user/0 tmpfs rw,seclabel,nosuid,nodev,relatime,size=2881188k,mode=700 0 0
 binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,relatime 0 0
 [root@Deb-1 ~]#
+
+
+Show space for non-reserve: [root@Deb-1 ~]# df / |grep dev | cut -f 3,6 -d\ | awk '{print ($1*.05)+$2}'
