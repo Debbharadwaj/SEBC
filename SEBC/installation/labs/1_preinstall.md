@@ -60,5 +60,8 @@ Show the nscd service is running
 service nscd start
 
 Show the ntpd service is running
+service nscd start
 
 yum install ntp
+service ntpd start
+
