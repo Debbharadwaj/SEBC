@@ -1,0 +1,88 @@
+sysctl -a | grep -i swap vm.swappiness = 1
+    2  service nscd start
+    3  yum install ntp service start
+    4  sysctl -a
+    5  sysctl -a | grep -i swap
+    6  vm.swappiness = 1
+    7  vm.swappiness = 1^C
+    8  ~$ cat /proc/sys/vm/swappiness
+    9  cat /proc/sys/vm/swappiness
+   10  vm.swappiness = 1
+   11  /etc/sysctl.conf
+   12  vim '/etc/sysctl.conf
+   13  vim /etc/sysctl.conf
+   14  vi /etc/sysctl.conf
+   15  df / |grep dev | cut -f 3,6 -d\ | awk '{print ($1*.05)+$2}'
+   16   sysctl -a | grep -i swap vm.swappiness = 1
+   17  sysctl -a
+   18  cat /proc/sys/vm/swappiness
+   19  wget https://dev.mysql.com/get/mysql57-community-release-el6-9.noarch.rpm
+   20  yum install wget
+   21  wget https://dev.mysql.com/get/mysql57-community-release-el6-9.noarch.rpm
+   22  ll
+   23  yum install wget mysql57-community-release-el6-9.noarch.rpm
+   24  yum localinstall mysql57-community-release-el6-7.noarch.rpm
+   25  rpm -ivh mysql57-community-release-el6-9.noarch.rpm
+   26  Yum repolist enabled | grep "mysql57-community-release-el6-9.noarch.rpm"
+   27  rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+   28  rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
+   29  yum install mysql55w mysql55w-server
+   30  y
+   31  yum install mysql55w mysql55w-server
+   32  yum move mysql-*
+   33  yum remove mysql-*
+   34  yum install mysql55w mysql55w-server
+   35  vi all.pem
+   36  cat all.pem
+   37  vi all.pem
+   38  vi /etc/hosts
+   39  cat /etc/hosts
+   40  vi /etc/hosts
+   41  ping sebdar2n2
+   42  vi nodes.lst
+   43  for a in `cat nodes.lst`; do ssh -o "StrictHostKeyChecking no" centos@{a} 'echo 0'; done
+   44  for a in `cat nodes.lst`; do ssh -o "StrictHostKeyChecking no" centos@${a} 'echo 0'; done
+   45  chmod a+x all.pem
+   46  for a in `cat nodes.lst`; do ssh -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'echo 0'; done
+   47  chmod 600 all.pem
+   48  for a in `cat nodes.lst`; do ssh -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'echo 0'; done
+   49  for a in `cat nodes.lst`; do ssh -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'hostname'; done
+   50  for a in `cat nodes.lst`; do ssh -t -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'sudo service iptables status'; done
+   51  for a in `cat nodes.lst`; do ssh -t -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'sudo service iptables stop'; done
+   52  for a in `cat nodes.lst`; do ssh -t -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'sudo service iptables status'; done
+   53  for a in `cat nodes.lst`; do ssh -t -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'sudo
+   54  for a in `cat nodes.lst`; do ssh -t -i all.pem  -o "StrictHostKeyChecking no" centos@${a}  "sudo
+   55  sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config " ; done
+   56  vi fixscript.sh
+   57  for a in `cat nodes.lst`; do scp  -i all.pem  -o "StrictHostKeyChecking no" fixscript.sh centos@${a}:~ 'sudo
+   58  for a in `cat nodes.lst`; do scp  -i all.pem  -o "StrictHostKeyChecking no" fixscript.sh centos@${a}:~ ;done
+   59  for a in `cat nodes.lst`; do ssh -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'sh -x fixscript.sh'; done
+   60  for a in `cat nodes.lst`; do ssh -t -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'sudo sh -x fixscript.sh'; done
+   61  for a in `cat nodes.lst`; do ssh -t -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'sudo cat /etc/selinux/config | grep SELINUX'; done
+   62  for a in `cat nodes.lst`; do ssh -t -i all.pem  -o "StrictHostKeyChecking no" centos@${a} 'sudo cat /etc/selinux/config | grep SELINUX | grep disabled'; done
+   63  ssh -i all.pem sebdar3n3
+   64  ssh -i all.pem centos@sebdar3n3
+   65  for a in `cat nodes.lst`; do ssh -i all.pem  -o "StrictHostKeyChecking no" centos@${a} -t 'sudo getenforce'; done
+   66  cat /proc/
+   67  cat /proc/sys/vm/swappiness
+   68  etc/sysctl.conf/
+   69  for a in `cat nodes.lst`; do ssh -i all.pem  -o "StrictHostKeyChecking no" centos@${a} -t 'sudo cat /proc/sys/vm/swappiness'; done
+   70  ll
+   71  ll /etc/hosts
+   72  cat /etc/hosts
+   73  for a in `cat nodes.lst`; do scp  -i all.pem  -o "StrictHostKeyChecking no" /etc/hosts centos@${a}:/etc ;done
+   74  for a in `cat nodes.lst`; do scp  -i all.pem  -o "StrictHostKeyChecking no" /etc/hosts centos@${a}:/tmp ;done
+   75  for a in `cat nodes.lst`; do ssh -i all.pem  -o "StrictHostKeyChecking no" centos@${a} -t 'sudo cp /tmp/hosts /etc/'; done
+   76  for a in `cat nodes.lst`; do ssh -i all.pem  -o "StrictHostKeyChecking no" centos@${a} -t 'ping sebdar3n3'; done
+   77  sudo service mysqld stop
+   78  vi /etc/my.cnf[mysqld]
+   79  vi /etc/my.cnf
+   80  service mysqld start
+   81  /usr/bin/mysql_secure_installation
+   82  sudo /sbin/chkconfig mysqld on
+   83  sudo /sbin/chkconfig --list mysqld
+   84  mysqld          0:off   1:off   2:on    3:on    4:on    5:on    6:off
+   85  sudo service mysqld start
+   86  history
+   87  yum install wget
+   88  wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.40.tar.gz
